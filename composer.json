@@ -1,5 +1,5 @@
 {
-    "name": "lasallecms/Candlelighting",
+    "name": "lasallecms/candlelighting",
     "description": "Candle lighting for LaSalleCMS.",
     "homepage": "http://lasallecms.com",
     "keywords": ["laravel", "laravel5", "Candle lighting", "LaSalleCMS", "South LaSalle", "Bob Bloom"],
