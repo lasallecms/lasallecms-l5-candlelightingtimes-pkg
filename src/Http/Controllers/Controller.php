@@ -1,4 +1,5 @@
 <?php
+
 namespace Lasallecms\Candlelighting\Http\Controllers;
 
 /**
@@ -39,6 +40,17 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 abstract class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    /**
+     * Middleware!
+     */
+    public function __construct() {
+        // User must be logged to access everything in this package
+        $this->middleware(\Lasallecms\Helpers\Middleware\MustBeLoggedInCheck::class);
+
+        // Logged in user must pass these checks too
+        $this->middleware(\Lasallecms\Helpers\Middleware\CustomAdminAuthChecks::class);
+    }
 }
 
 

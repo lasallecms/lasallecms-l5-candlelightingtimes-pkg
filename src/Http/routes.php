@@ -28,11 +28,22 @@
  *
  */
 
+
 /*
- * Admin auth routes
+ * Admin routes
  */
-$router->get('admin/login', [
-    'as'   => 'admin.login',
-    'uses' => 'AdminAuth\AdminLoginController@getLogin'
+$router->get('admin/candlelighting', [
+    'as'   => 'admin.candlelighting',
+    'uses' => 'CandlelightingController@displayadmin'
 ]);
+
+/*
+ * frontend routes
+ */
+$router->get('candlelighting/display1', [
+    'as'   => 'candlelighting.display1',
+    'uses' => 'CandlelightingController@displayFrontend1'
+]);
+
+
 

@@ -30,4 +30,16 @@
 
 return [
 
+    /*
+    |--------------------------------------------------------------------------
+    | How many minutes is Havdalah after sundown?
+    |--------------------------------------------------------------------------
+    |
+    | How many minutes after sundown is Havdalah?
+    |
+    | See https://www.hebcal.com/home/96/what-is-havdalah-or-when-does-shabbat-end
+    |
+    */
+    'candlelighting_havdalah_minutes_after_sundown' => '50',
+
 ];
